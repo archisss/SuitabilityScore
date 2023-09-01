@@ -32,17 +32,17 @@ npm run test
 node index.js
 ```
 # Overview
-* `routeAssignation` : This function is the main function of the code, here we get the txt files with the destinations routes and drivers to calculate the suitability score, internally we iterate for each of the routes and we get the suitability score for each drivers base in the mathematical algorithm created base if the route name is even or odd and getting extra porcentage in case the length of the driver and the route has more than one common factor.
+* `routeAssignation` : This function is the main function of the code, here we get the txt files with the destination routes and drivers to calculate the suitability score, internally we iterate for each route and we get the suitability score for each of the driver base in the mathematical algorithm created base if the route name is even or odd and getting extra porcentage in case the length of the driver and the route has more than one common factor.
 *  `suitabilityScore` : This function gets the destination route and the driver name and base in the length of the destination route using the algorithm for even or odd calculates the suitability score for each route and driver. 
 *  `hasCommonFactor` : This is a helper function from `suitabilityScore` to validate if the destination route and the driver name length base in the algorithm has more than 1 as a common factor. 
 
 # Personal approach
 As a developer every time I need to solve a problem first, I understand what is the problem for, what I need to do or consider to solve the problem.
 In this case I have the algorithm, so I need to implement base in the files get with destination routes and drivers names information; in this case I solve this problem following this path:
-* Convert the files informtion into arrays ( destinations and drivers text files ) so I can work with the validations for each route with each driver.
+* Convert the files information into arrays ( destinations and drivers text files ) so I can work with the validations for each route with each driver.
 * When I got the information in arrays I need to pass all the destinations routes one by one and calculate the suitability score for each driver, after validate all the drivers; the one with the top suitability score is added to a new object linking the destination route with the top suitability score driver and the driver with the highest suitability score is deleted from the drivers array because just one driver can be assigne to each destination.
 * After finishing with all the destination routes in text file, we will end with the most suitable destination route base on the destination route name and the driver name.
-* I decide to create different files for each part of the process to calculate the suitability score because in that way my test suite will be organice in a better manner.
+* I decide to create different files for each part of the process to calculate the suitability score because in that way my test suite will be organiced in a better way.
 
 # Problem Statement
 Our sales team has just struck a deal with Acme Inc to become the exclusive provider for routing their product shipments via 3rd party trucking fleets. The catch is that we can only route one shipment to one driver per day.
