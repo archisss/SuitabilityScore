@@ -29,7 +29,7 @@ npm run test
 ```
 6. Execute the suitability score mathematical model
 ```
-npm index.js
+node index.js
 ```
 # Overview
 * `routeAssignation` : This function is the main function of the code, here we get the txt files with the routes and drivers to calculare the suitability score, internally we iterate for each of the routes and we get the suitability score for each drivers base is the mathematical algorith created base if the route name is even or odd and getting extra porcentage in case the length of the driver and the route has more than one common factor.
